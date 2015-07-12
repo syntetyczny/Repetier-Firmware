@@ -636,6 +636,27 @@ void uiCheckSlowKeys(int &action) {}
 #define UI_VOLTAGE_LEVEL 1 // Set 1=5 o 0=3.3 V
 #endif
 
+#elif MOTHERBOARD == 8
+
+#define BEEPER_PIN             -1
+#define UI_DISPLAY_RS_PIN      1
+#define UI_DISPLAY_RW_PIN      -1
+#define UI_DISPLAY_ENABLE_PIN  3
+#define UI_DISPLAY_D0_PIN      0
+#define UI_DISPLAY_D1_PIN      2
+#define UI_DISPLAY_D2_PIN      4
+#define UI_DISPLAY_D3_PIN      6
+#define UI_DISPLAY_D4_PIN      0
+#define UI_DISPLAY_D5_PIN      2
+#define UI_DISPLAY_D6_PIN      4
+#define UI_DISPLAY_D7_PIN      6
+#define UI_ENCODER_A           5
+#define UI_ENCODER_B           7
+#define UI_ENCODER_CLICK       39
+#define UI_RESET_PIN           41
+#undef SDCARDDETECT
+#define SDCARDDETECT           -1
+
 #elif MOTHERBOARD == CONTROLLER_FELIX_DUE
 
 #define BEEPER_PIN             -1
